@@ -15,7 +15,7 @@ toogleBtn.addEventListener('click', function () {
 
 async function getWeather(currentCity) {
   let response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=013ebea3e66a429fbcd165724231902&q=${currentCity}&days=${currentDays}`,
+    `https://api.weatherapi.com/v1/forecast.json?key=013ebea3e66a429fbcd165724231902&q=${currentCity}&days=${currentDays}`,
   );
   let data = await response.json();
   displayData(data);
